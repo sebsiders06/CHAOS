@@ -60,9 +60,15 @@
               method="POST"
               action="https://formsubmit.co/pixelsiders71@gmail.com"
             >
-              <input type="hidden" name="_subject" value="Nouvelle demande de contact depuis Siders Pixel" />
+              <input
+                type="hidden"
+                name="_subject"
+                value="Nouvelle demande de contact depuis Siders Pixel"
+                data-subject-field
+              />
               <input type="hidden" name="_captcha" value="false" />
               <input type="hidden" name="_template" value="table" />
+              <input type="hidden" name="_replyto" value="" data-replyto-field />
               <div class="form-row">
                 <label for="name">Nom</label>
                 <input
@@ -88,12 +94,13 @@
               </div>
 
               <div class="form-row form-honeypot" aria-hidden="true">
-                <label for="company-website">Site web</label>
+                <label for="website-check">Ne pas remplir ce champ</label>
                 <input
-                  id="company-website"
-                  name="companyWebsite"
+                  id="website-check"
+                  name="websiteCheck"
                   type="text"
                   tabindex="-1"
+                  inputmode="none"
                   autocomplete="off"
                 />
               </div>
