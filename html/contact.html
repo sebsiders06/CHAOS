@@ -54,7 +54,15 @@
               Remplissez ce formulaire pour présenter votre projet, votre contexte et vos objectifs.
               Nous revenons vers vous avec une recommandation simple et exploitable.
             </p>
-            <form data-contact-form novalidate>
+            <form
+              data-contact-form
+              novalidate
+              method="POST"
+              action="https://formsubmit.co/pixelsiders71@gmail.com"
+            >
+              <input type="hidden" name="_subject" value="Nouvelle demande de contact depuis Siders Pixel" />
+              <input type="hidden" name="_captcha" value="false" />
+              <input type="hidden" name="_template" value="table" />
               <div class="form-row">
                 <label for="name">Nom</label>
                 <input

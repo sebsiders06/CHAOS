@@ -6,6 +6,7 @@ const contactForm = document.querySelector("[data-contact-form]");
 const formStatus = document.querySelector("[data-form-status]");
 const submitButton = document.querySelector("[data-submit-button]");
 const submitLabel = document.querySelector("[data-submit-label]");
+const CONTACT_FORM_ENDPOINT = "https://formsubmit.co/ajax/pixelsiders71@gmail.com";
 const currentYear = new Date().getFullYear();
 
 document.querySelectorAll("[data-current-year]").forEach((node) => {
@@ -99,23 +100,35 @@ if (contactForm && formStatus) {
     formStatus.textContent = "Envoi de votre message en cours...";
 
     try {
-      const response = await fetch("/api/contact", {
+      const requestBody = new FormData();
+      requestBody.set("name", name);
+      requestBody.set("email", email);
+      requestBody.set("subject", subject);
+      requestBody.set("message", message);
+      requestBody.set("_subject", subject ? `[Site Siders Pixel] ${subject}` : "[Site Siders Pixel] Nouvelle demande de contact");
+      requestBody.set("_captcha", "false");
+      requestBody.set("_template", "table");
+      requestBody.set("_replyto", email);
+
+      const response = await fetch(CONTACT_FORM_ENDPOINT, {
         method: "POST",
         headers: {
-          "Content-Type": "application/json"
+          Accept: "application/json"
         },
-        body: JSON.stringify({
-          name,
-          email,
-          subject,
-          message,
-          companyWebsite
-        })
+        body: requestBody
       });
 
-      const result = await response.json();
+      let result = {};
 
-      formStatus.textContent = result.message || "Une réponse du serveur a été reçue.";
+      try {
+        result = await response.json();
+      } catch (parseError) {
+        result = {};
+      }
+
+      formStatus.textContent = response.ok
+        ? "Votre message a bien ete envoye. Nous revenons vers vous au plus vite."
+        : result.message || "L'envoi n'a pas pu aboutir. Merci de reessayer dans quelques instants.";
       formStatus.classList.add(response.ok ? "is-success" : "is-error");
 
       if (response.ok) {
