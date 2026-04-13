@@ -1,15 +1,28 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="fr">
   <head>
     <meta charset="UTF-8" />
-    <meta http-equiv="refresh" content="0; url=./html/index.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Page introuvable | Siders Pixel</title>
-    <script>
-      window.location.replace("./html/index.html");
-    </script>
+    <meta name="robots" content="noindex,follow" />
+    <link rel="stylesheet" href="assets/css/main.css" />
   </head>
   <body>
-    <p>Page introuvable. Redirection vers <a href="./html/index.html">l'accueil</a>...</p>
+    <main class="page-main">
+      <section class="page-hero section">
+        <div class="container">
+          <span class="eyebrow">Erreur 404</span>
+          <h1>Cette page n'existe pas ou a été déplacée.</h1>
+          <p class="lead">
+            La navigation du site a été simplifiée pour GitHub Pages. Revenez à l'accueil ou
+            utilisez les liens principaux ci-dessous.
+          </p>
+          <div class="btn-group">
+            <a class="btn btn-primary" href="index.html">Retour à l'accueil</a>
+            <a class="btn btn-secondary" href="contact.html">Nous contacter</a>
+          </div>
+        </div>
+      </section>
+    </main>
   </body>
 </html>
