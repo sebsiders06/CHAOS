@@ -647,6 +647,10 @@ ul {
   padding: 1.5rem 1.8rem 1.5rem 1.5rem;
 }
 
+.hero-proof-item .kpi {
+  font-size: clamp(1.8rem, 4.2vw, 2.6rem);
+}
+
 .card-icon {
   display: grid;
   place-items: center;
