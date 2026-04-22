@@ -743,9 +743,11 @@ ul {
 }
 
 .kpi {
+  display: inline-block;
   font-size: clamp(2rem, 5vw, 3rem);
   font-weight: 800;
   line-height: 1;
+  padding-right: 0.16em;
   color: #b6a7ff;
   text-shadow:
     0 0 10px rgba(122, 60, 255, 0.12),
