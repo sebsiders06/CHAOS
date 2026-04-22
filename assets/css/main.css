@@ -643,6 +643,10 @@ ul {
   padding: 1.5rem;
 }
 
+.hero-proof-item {
+  padding: 1.5rem 1.8rem 1.5rem 1.5rem;
+}
+
 .card-icon {
   display: grid;
   place-items: center;
