@@ -35,11 +35,15 @@ body {
   font-family: Inter, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
   color: var(--text);
   background:
-    linear-gradient(180deg, rgba(10, 12, 22, 0.98) 0%, rgba(6, 7, 14, 0.99) 38%, rgba(2, 2, 4, 1) 100%),
+    linear-gradient(180deg, rgba(4, 5, 12, 0.48) 0%, rgba(2, 2, 8, 0.62) 36%, rgba(2, 2, 4, 0.9) 100%),
     radial-gradient(circle at 50% 12%, rgba(115, 94, 185, 0.12), transparent 22%),
     radial-gradient(circle at 22% 20%, rgba(255, 92, 170, 0.08), transparent 18%),
     radial-gradient(circle at 78% 22%, rgba(58, 181, 255, 0.08), transparent 16%),
+    url("../../image/balde 2.jpg"),
     var(--bg);
+  background-size: auto, auto, auto, auto, cover, auto;
+  background-position: center, center, center, center, center top, center;
+  background-repeat: no-repeat, no-repeat, no-repeat, no-repeat, no-repeat, repeat;
   line-height: 1.6;
   position: relative;
 }
@@ -54,48 +58,27 @@ body::after {
 }
 
 body::before {
-  opacity: 0.88;
+  opacity: 0.34;
   background:
-    radial-gradient(circle at 50% 34%, rgba(255, 255, 255, 0.08), transparent 10%),
-    linear-gradient(180deg, transparent 0%, transparent 54%, rgba(255, 255, 255, 0.05) 55%, rgba(8, 10, 18, 0.2) 56%, transparent 57%),
-    radial-gradient(circle at 50% 60%, rgba(255, 255, 255, 0.06), transparent 18%),
-    linear-gradient(180deg, transparent 0%, transparent 57%, rgba(255, 92, 170, 0.08) 73%, rgba(58, 181, 255, 0.09) 100%),
-    linear-gradient(90deg, transparent 0%, rgba(255, 92, 170, 0.08) 26%, rgba(58, 181, 255, 0.1) 48%, rgba(255, 92, 170, 0.06) 72%, transparent 100%);
-  background-size: 100% 100%;
-  filter: blur(0.5px);
+    linear-gradient(180deg, rgba(2, 2, 6, 0.12) 0%, rgba(2, 2, 6, 0) 28%, rgba(2, 2, 4, 0.42) 100%),
+    url("../../image/balde 1.jpg");
+  background-size: cover, cover;
+  background-position: center, center;
+  background-repeat: no-repeat, no-repeat;
+  filter: blur(1px) saturate(1.02) brightness(0.62) contrast(1.08);
 }
 
 body::after {
   background:
-    linear-gradient(180deg, transparent 0%, transparent 54%, rgba(0, 0, 0, 0.28) 54.6%, rgba(255, 255, 255, 0.03) 55%, transparent 55.4%),
-    radial-gradient(circle at 15% 54%, rgba(255, 92, 170, 0.18), transparent 6%),
-    radial-gradient(circle at 82% 54%, rgba(58, 181, 255, 0.18), transparent 6%),
-    linear-gradient(180deg, transparent 0%, transparent 55%, rgba(7, 9, 18, 0.12) 55%, rgba(2, 2, 4, 0.2) 100%),
-    linear-gradient(90deg, transparent 0 3%, rgba(255, 255, 255, 0.03) 3% 3.12%, transparent 3.12% 100%),
-    linear-gradient(90deg, transparent 0%, transparent 6%, rgba(14, 16, 26, 0.92) 6%, rgba(14, 16, 26, 0.92) 10%, transparent 10%, transparent 13%, rgba(10, 11, 20, 0.95) 13%, rgba(10, 11, 20, 0.95) 17%, transparent 17%, transparent 22%, rgba(12, 13, 24, 0.96) 22%, rgba(12, 13, 24, 0.96) 27%, transparent 27%, transparent 31%, rgba(8, 9, 17, 0.96) 31%, rgba(8, 9, 17, 0.96) 35%, transparent 35%, transparent 40%, rgba(14, 15, 28, 0.96) 40%, rgba(14, 15, 28, 0.96) 44%, transparent 44%, transparent 49%, rgba(10, 11, 22, 0.96) 49%, rgba(10, 11, 22, 0.96) 54%, transparent 54%, transparent 58%, rgba(8, 10, 18, 0.96) 58%, rgba(8, 10, 18, 0.96) 62%, transparent 62%, transparent 66%, rgba(12, 13, 22, 0.96) 66%, rgba(12, 13, 22, 0.96) 70%, transparent 70%, transparent 75%, rgba(9, 10, 20, 0.96) 75%, rgba(9, 10, 20, 0.96) 79%, transparent 79%, transparent 83%, rgba(12, 14, 26, 0.96) 83%, rgba(12, 14, 26, 0.96) 88%, transparent 88%, transparent 92%, rgba(9, 10, 18, 0.97) 92%, rgba(9, 10, 18, 0.97) 100%),
-    linear-gradient(180deg, transparent 0%, transparent 57%, rgba(255, 92, 170, 0.06) 57.4%, transparent 58%, transparent 100%),
-    linear-gradient(180deg, transparent 0%, transparent 57%, rgba(58, 181, 255, 0.06) 58.2%, transparent 58.8%, transparent 100%);
-  background-size:
-    100% 100%,
-    100% 100%,
-    100% 100%,
-    100% 100%,
-    12% 34%,
-    100% 100%,
-    100% 100%,
-    100% 100%;
-  background-repeat: no-repeat, no-repeat, no-repeat, no-repeat, repeat-x, no-repeat, no-repeat, no-repeat;
-  background-position:
-    center,
-    center,
-    center,
-    center,
-    center 66%,
-    center,
-    center,
-    center;
-  mask-image: linear-gradient(180deg, transparent 0%, rgba(0, 0, 0, 0.22) 18%, black 40%, black 100%);
-  opacity: 0.96;
+    linear-gradient(180deg, rgba(3, 4, 10, 0.16) 0%, rgba(3, 4, 10, 0.34) 24%, rgba(2, 2, 4, 0.58) 58%, rgba(2, 2, 4, 0.82) 100%),
+    radial-gradient(circle at 18% 28%, rgba(255, 92, 170, 0.14), transparent 16%),
+    radial-gradient(circle at 82% 24%, rgba(58, 181, 255, 0.12), transparent 16%),
+    radial-gradient(circle at 50% 12%, rgba(255, 255, 255, 0.06), transparent 18%),
+    linear-gradient(180deg, transparent 0%, transparent 54%, rgba(255, 255, 255, 0.025) 54.8%, rgba(2, 2, 4, 0.18) 55.2%, transparent 56%);
+  background-size: 100% 100%, 100% 100%, 100% 100%, 100% 100%, 100% 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  opacity: 1;
 }
 
 img {
