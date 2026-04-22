@@ -39,10 +39,10 @@ body {
     radial-gradient(circle at 50% 12%, rgba(115, 94, 185, 0.12), transparent 22%),
     radial-gradient(circle at 22% 20%, rgba(255, 92, 170, 0.08), transparent 18%),
     radial-gradient(circle at 78% 22%, rgba(58, 181, 255, 0.08), transparent 16%),
-    url("../../image/balde 3.png"),
+    url("../../image/balde 4.png"),
     var(--bg);
   background-size: auto, auto, auto, auto, cover, auto;
-  background-position: center, center, center, center, center top, center;
+  background-position: center, center, center, center, center 18%, center;
   background-repeat: no-repeat, no-repeat, no-repeat, no-repeat, no-repeat, repeat;
   line-height: 1.6;
   position: relative;
@@ -58,23 +58,23 @@ body::after {
 }
 
 body::before {
-  opacity: 0.34;
+  opacity: 0.42;
   background:
-    linear-gradient(180deg, rgba(2, 2, 6, 0.12) 0%, rgba(2, 2, 6, 0) 28%, rgba(2, 2, 4, 0.42) 100%),
-    url("../../image/balde 3.png");
+    linear-gradient(180deg, rgba(2, 2, 6, 0.08) 0%, rgba(2, 2, 6, 0) 24%, rgba(2, 2, 4, 0.3) 100%),
+    url("../../image/balde 4.png");
   background-size: cover, cover;
-  background-position: center, center;
+  background-position: center, center 18%;
   background-repeat: no-repeat, no-repeat;
-  filter: blur(1px) saturate(1.02) brightness(0.62) contrast(1.08);
+  filter: blur(0) saturate(1.08) brightness(0.84) contrast(1.16);
 }
 
 body::after {
   background:
-    linear-gradient(180deg, rgba(3, 4, 10, 0.16) 0%, rgba(3, 4, 10, 0.34) 24%, rgba(2, 2, 4, 0.58) 58%, rgba(2, 2, 4, 0.82) 100%),
-    radial-gradient(circle at 18% 28%, rgba(255, 92, 170, 0.14), transparent 16%),
-    radial-gradient(circle at 82% 24%, rgba(58, 181, 255, 0.12), transparent 16%),
-    radial-gradient(circle at 50% 12%, rgba(255, 255, 255, 0.06), transparent 18%),
-    linear-gradient(180deg, transparent 0%, transparent 54%, rgba(255, 255, 255, 0.025) 54.8%, rgba(2, 2, 4, 0.18) 55.2%, transparent 56%);
+    linear-gradient(180deg, rgba(3, 4, 10, 0.12) 0%, rgba(3, 4, 10, 0.24) 24%, rgba(2, 2, 4, 0.48) 58%, rgba(2, 2, 4, 0.72) 100%),
+    radial-gradient(circle at 18% 28%, rgba(255, 92, 170, 0.1), transparent 16%),
+    radial-gradient(circle at 82% 24%, rgba(58, 181, 255, 0.1), transparent 16%),
+    radial-gradient(circle at 50% 12%, rgba(255, 255, 255, 0.04), transparent 18%),
+    linear-gradient(180deg, transparent 0%, transparent 54%, rgba(255, 255, 255, 0.018) 54.8%, rgba(2, 2, 4, 0.12) 55.2%, transparent 56%);
   background-size: 100% 100%, 100% 100%, 100% 100%, 100% 100%, 100% 100%;
   background-repeat: no-repeat;
   background-position: center;
