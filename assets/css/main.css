@@ -208,6 +208,7 @@ ul {
   justify-content: space-between;
   gap: 1rem;
   min-height: var(--nav-height);
+  position: relative;
 }
 
 .brand {
@@ -247,6 +248,20 @@ ul {
   letter-spacing: 0.12em;
   font-size: 0.9rem;
   color: #fff;
+}
+
+.header-tagline {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  margin: 0;
+  color: #fff;
+  font-size: 0.9rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  white-space: nowrap;
+  pointer-events: none;
 }
 
 .nav-links {
@@ -977,6 +992,10 @@ textarea:focus {
 }
 
 @media (max-width: 860px) {
+  .header-tagline {
+    display: none;
+  }
+
   .nav-toggle {
     display: grid;
   }
