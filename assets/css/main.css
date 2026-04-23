@@ -1081,15 +1081,13 @@ textarea:focus {
     display: grid;
     align-items: start;
     gap: 0.75rem;
-    padding: 1rem clamp(7.5rem, 32vw, 10rem) 1rem 1rem;
+    padding: 1rem clamp(8.5rem, 36vw, 11rem) 1rem 1rem;
     background: #000;
     /* Reserve the right side for the decorative mobile menu artwork. */
-    background-image:
-      linear-gradient(90deg, rgba(0, 0, 0, 0.98) 0%, rgba(0, 0, 0, 0.96) 60%, rgba(0, 0, 0, 0.4) 100%),
-      url("../../image/siderspixel.png");
+    background-image: url("../../image/siderspixel.png");
     background-repeat: no-repeat;
-    background-position: center, right 1rem center;
-    background-size: cover, clamp(5.75rem, 24vw, 7.5rem);
+    background-position: right 2.5rem center;
+    background-size: clamp(7rem, 30vw, 9rem);
     border: 1px solid rgba(73, 214, 255, 0.16);
     border-radius: 1.25rem;
     box-shadow: var(--shadow);
