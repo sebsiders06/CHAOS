@@ -140,6 +140,10 @@ textarea {
   margin-bottom: 2.5rem;
 }
 
+.services-intro {
+  color: #fff;
+}
+
 .eyebrow {
   display: inline-flex;
   align-items: center;
