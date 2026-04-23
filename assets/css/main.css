@@ -1095,6 +1095,19 @@ textarea:focus {
 }
 
 @media (max-width: 640px) {
+  body.legal-page::before {
+    inset: 0;
+    background:
+      linear-gradient(180deg, rgba(4, 5, 12, 0.18) 0%, rgba(2, 2, 8, 0.24) 35%, rgba(2, 2, 4, 0.38) 100%),
+      radial-gradient(circle at 50% 12%, rgba(115, 94, 185, 0.08), transparent 22%),
+      radial-gradient(circle at 22% 20%, rgba(255, 92, 170, 0.05), transparent 18%),
+      radial-gradient(circle at 78% 22%, rgba(58, 181, 255, 0.05), transparent 16%),
+      url("../../image/phone.jpg");
+    background-size: 100% 100%, 100% 100%, 100% 100%, 100% 100%, cover;
+    background-position: center, center, center, center, center center;
+    background-repeat: no-repeat, no-repeat, no-repeat, no-repeat, no-repeat;
+  }
+
   .brand {
     gap: 0.65rem;
   }
