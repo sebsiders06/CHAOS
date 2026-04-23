@@ -197,7 +197,7 @@ textarea {
   font-weight: 700;
   letter-spacing: 0.18em;
   text-transform: uppercase;
-  color: var(--accent-strong);
+  color: #fff;
   text-shadow: 0 0 10px rgba(122, 60, 255, 0.22);
 }
 
