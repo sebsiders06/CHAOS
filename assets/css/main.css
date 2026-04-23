@@ -560,7 +560,7 @@ ul {
   border-bottom: 0;
 }
 
-.hero-panel-overlay .dashboard-top strong,
+.hero-panel-overlay .dashboard-top > strong,
 .hero-panel-overlay .metric-value {
   color: #fff;
 }
