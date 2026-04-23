@@ -6,7 +6,7 @@
   --muted: #848aa6;
   --line: rgba(95, 107, 166, 0.22);
   --accent: #3ab5ff;
-  --accent-strong: #7a3cff;
+  --accent-strong: #8b38d7;
   --accent-soft: rgba(122, 60, 255, 0.16);
   --success: #72ffc6;
   --danger: #ff7e9d;
@@ -787,7 +787,7 @@ ul {
   font-weight: 800;
   line-height: 1;
   padding-right: 0.16em;
-  color: #b6a7ff;
+  color: #8b38d7;
   text-shadow:
     0 0 10px rgba(122, 60, 255, 0.12),
     0 0 14px rgba(58, 181, 255, 0.08);
