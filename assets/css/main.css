@@ -679,6 +679,16 @@ ul {
     linear-gradient(135deg, rgba(122, 60, 255, 0.08), rgba(9, 12, 26, 0.94)),
     rgba(5, 8, 18, 0.94);
   box-shadow: inset 0 0 0 1px rgba(58, 181, 255, 0.035);
+  text-align: center;
+}
+
+.banner-title {
+  margin: 0 0 0.75rem;
+  color: #fff;
+  font-size: 0.9rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
 }
 
 .split-section {
@@ -1015,6 +1025,10 @@ textarea:focus {
 
   .hero {
     padding-top: 4.4rem;
+  }
+
+  .banner-title {
+    display: none;
   }
 
   .card,
