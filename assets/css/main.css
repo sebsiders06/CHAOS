@@ -892,8 +892,8 @@ ul {
 
 body.legal-page .legal-card {
   background:
-    linear-gradient(180deg, rgba(12, 14, 27, 0.76), rgba(5, 7, 15, 0.72)),
-    linear-gradient(120deg, rgba(122, 60, 255, 0.03), transparent 55%);
+    linear-gradient(180deg, rgba(12, 14, 27, 0.56), rgba(5, 7, 15, 0.5)),
+    linear-gradient(120deg, rgba(122, 60, 255, 0.02), transparent 55%);
 }
 
 .site-footer .brand {
