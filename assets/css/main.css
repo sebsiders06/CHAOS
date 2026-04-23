@@ -185,7 +185,7 @@ ul {
 
 .lead {
   font-size: clamp(1.05rem, 2vw, 1.25rem);
-  color: #c7d0e8;
+  color: #fff;
 }
 
 .page-main {
