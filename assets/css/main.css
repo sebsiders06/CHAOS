@@ -61,6 +61,15 @@ body::before {
   filter: saturate(1.05) brightness(0.92) contrast(1.02);
 }
 
+body.legal-page::before {
+  background:
+    linear-gradient(180deg, rgba(4, 5, 12, 0.18) 0%, rgba(2, 2, 8, 0.24) 35%, rgba(2, 2, 4, 0.38) 100%),
+    radial-gradient(circle at 50% 12%, rgba(115, 94, 185, 0.08), transparent 22%),
+    radial-gradient(circle at 22% 20%, rgba(255, 92, 170, 0.05), transparent 18%),
+    radial-gradient(circle at 78% 22%, rgba(58, 181, 255, 0.05), transparent 16%),
+    url("../../image/la terre.jpg");
+}
+
 body::after {
   inset: 0;
   z-index: -1;
