@@ -891,16 +891,24 @@ ul {
 }
 
 body.legal-page .legal-card {
-  background:
-    linear-gradient(180deg, rgba(12, 14, 27, 0.56), rgba(5, 7, 15, 0.5)),
-    linear-gradient(120deg, rgba(122, 60, 255, 0.02), transparent 55%);
+  border: 0;
+  border-radius: 0;
+  background: transparent;
+  box-shadow: none;
+  backdrop-filter: none;
   color: #fff;
+  overflow: visible;
 }
 
 body.legal-page .legal-card p,
 body.legal-page .legal-card strong,
 body.legal-page .legal-card a {
   color: #fff;
+}
+
+body.legal-page .legal-card::before,
+body.legal-page .legal-card::after {
+  content: none;
 }
 
 .site-footer .brand {
